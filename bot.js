@@ -17,13 +17,13 @@ client.on("message", message => {
 
 ***__وصف عن البوت__***
 **
-ZeroBot ✨
+TEROX BOT ✨
+
+THE OWNER : <@498991974393708554>
 
 -🚀 سرعه اتصال ممتازه
 -😎 سهل الاستخدام
--⚠ صيانه كل يوم
--💵 مجاني بل كامل
--📚 البوت عربي و سيتم اضافه اللغه النكليزية
+-💵 يوجد بريميوم و بارخص الاسعار 
 **
 
         ***__General orders__***
@@ -75,6 +75,12 @@ ZeroBot ✨
 『!cv /انشاء روم صوتي』
 『!bc /برودكاست』
 『log /إنشاء روم وتسميتها **log**』
+**
+
+        ***__Tickety orders__***
+**
+『!new / لفتح التكت』
+『!close / لاغلاق التيكت』 
 **
 
         ***__Music orders__***
@@ -833,7 +839,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription("Add me" + `
  **
-رابط البوت | https://discordapp.com/api/oauth2/authorize?client_id=537335987534299145&permissions=0&scope=bot
+رابط البوت | https://discordapp.com/api/oauth2/authorize?client_id=537335987534299145&permissions=8&scope=bot
  **
 `);
   message.author.sendEmbed(embed);
@@ -850,7 +856,7 @@ client.on("message", (message) => {
  .setThumbnail(client.user.avatarURL)     
  .setDescription(" ***welcome To server support*** " + `
  **
-رابط السيرفر | https://discord.gg/hTDQTQD
+رابط السيرفر | https://discord.gg/yjjNSj2
  **
 `);
   message.author.sendEmbed(embed);
@@ -13122,7 +13128,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
 if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket`)) return message.channel.send(`لا يمكنك استخدام أمر الإغلاق خارج قناة التذاكر`);
  
-    message.channel.send(`**confirm** : هل انت متأكد من اغلاق التذكرة ؟ اذا انت متأكد اكتب`)
+    message.channel.send(`**!close** : هل انت متأكد من اغلاق التذكرة ؟ اذا انت متأكد اكتب`)
     .then((m) => {
       message.channel.awaitMessages(response => response.content === 'confirm', {
         max: 1,
